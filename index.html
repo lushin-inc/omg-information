@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OMG Sales Assessments for Hubexo — through Lushin</title>
+<meta property="og:title" content="OMG Sales Assessments for Hubexo">
+<meta property="og:description" content="Hire and develop sales talent with data — the same OMG program, available to every Hubexo region through Lushin.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --stable:#21245C;        /* navy */
+    --stable-2:#171a45;
+    --fresh:#00ADED;         /* cyan */
+    --energetic:#0045C2;     /* blue */
+    --passionate:#E34554;    /* red */
+    --limitless:#FAB040;     /* gold */
+    --ink:#1c1f3a;
+    --body:#3a3f55;
+    --muted:#6b7088;
+    --line:#e4e7f0;
+    --gray:#f4f6fb;
+    --white:#ffffff;
+    --font:'Poppins',Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--font);color:var(--body);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{color:var(--stable);font-weight:600;line-height:1.2;letter-spacing:-0.01em;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--fresh);}
+
+  /* Nav */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:600;color:var(--stable);font-size:1.05rem;}
+  .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--fresh);box-shadow:0 0 0 4px rgba(0,173,237,.15);}
+  .brand small{display:block;font-weight:400;font-size:.7rem;letter-spacing:.04em;color:var(--muted);}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--stable);color:#fff;padding:9px 18px;border-radius:999px;font-size:.85rem;font-weight:500;transition:.2s;}
+  .nav-cta:hover{background:var(--energetic);}
+  .nav-links{display:flex;gap:26px;font-size:.85rem;font-weight:500;color:var(--body);}
+  .nav-links a:hover{color:var(--fresh);}
+  @media(max-width:860px){.nav-links{display:none;}}
+
+  /* Hero */
+  .hero{position:relative;background:radial-gradient(1200px 600px at 80% -10%,#2b2f73 0%,var(--stable) 45%,var(--stable-2) 100%);color:#fff;overflow:hidden;}
+  .hero:after{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 39.5H40M39.5 0V40' stroke='%23ffffff' stroke-opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;}
+  .hero .wrap{position:relative;z-index:2;padding:84px 24px 92px;}
+  .hero h1{color:#fff;font-size:3rem;max-width:16ch;font-weight:600;}
+  .hero p.lede{margin-top:22px;font-size:1.12rem;color:#c9cdf0;max-width:56ch;font-weight:300;}
+  .hero .badge{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 15px;border-radius:999px;font-size:.78rem;color:#dfe2ff;margin-bottom:26px;}
+  .hero .badge b{color:#fff;font-weight:600;}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px;}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.92rem;cursor:pointer;border:none;transition:.2s;font-family:var(--font);}
+  .btn-primary{background:var(--fresh);color:#06283b;}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,173,237,.4);}
+  .btn-ghost-light{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35);}
+  .btn-ghost-light:hover{border-color:#fff;background:rgba(255,255,255,.08);}
+  @media(max-width:680px){.hero h1{font-size:2.1rem;}.hero .wrap{padding:60px 24px 68px;}}
+
+  /* Stat band */
+  .stats{background:var(--stable-2);color:#fff;border-top:1px solid rgba(255,255,255,.07);}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:40px 24px;}
+  .stat{text-align:center;}
+  .stat .n{font-size:2.1rem;font-weight:700;color:#fff;letter-spacing:-0.02em;}
+  .stat .n span{color:var(--fresh);}
+  .stat .l{font-size:.8rem;color:#aeb2dd;margin-top:4px;font-weight:300;}
+  @media(max-width:780px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:28px 16px;}}
+
+  /* Sections */
+  section{padding:84px 0;}
+  .section-head{max-width:62ch;margin-bottom:48px;}
+  .section-head h2{font-size:2.05rem;margin-top:10px;}
+  .section-head p{margin-top:14px;font-size:1.05rem;color:var(--muted);font-weight:300;}
+  .center{text-align:center;margin-left:auto;margin-right:auto;}
+
+  /* Two-offer cards */
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  .ocard{position:relative;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:34px 32px;transition:.25s;overflow:hidden;}
+  .ocard:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;}
+  .ocard.hire:before{background:linear-gradient(90deg,var(--passionate),var(--limitless));}
+  .ocard.seia:before{background:linear-gradient(90deg,var(--fresh),var(--energetic));}
+  .ocard:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(33,36,92,.12);border-color:transparent;}
+  .ocard .tag{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;}
+  .ocard.hire .tag{color:var(--passionate);}
+  .ocard.seia .tag{color:var(--energetic);}
+  .ocard h3{font-size:1.45rem;margin:10px 0 6px;}
+  .ocard .sub{font-size:.95rem;color:var(--muted);margin-bottom:18px;font-weight:300;}
+  .ocard ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:24px;}
+  .ocard li{display:flex;gap:11px;font-size:.94rem;color:var(--body);}
+  .ocard li svg{flex:none;margin-top:3px;}
+  .ocard .go{font-weight:600;font-size:.9rem;display:inline-flex;align-items:center;gap:7px;}
+  .ocard.hire .go{color:var(--passionate);}
+  .ocard.seia .go{color:var(--energetic);}
+  @media(max-width:780px){.duo{grid-template-columns:1fr;}}
+
+  /* Feature grid */
+  .alt{background:var(--gray);}
+  .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .fcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 24px;}
+  .fcard .ic{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:rgba(0,173,237,.1);color:var(--fresh);margin-bottom:14px;}
+  .fcard h4{font-size:1.05rem;margin-bottom:7px;}
+  .fcard p{font-size:.9rem;color:var(--muted);font-weight:300;}
+  @media(max-width:780px){.feat{grid-template-columns:1fr;}}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s;}
+  .step{position:relative;padding:26px 22px;background:#fff;border:1px solid var(--line);border-radius:14px;}
+  .step .num{font-family:var(--font);font-size:.8rem;font-weight:700;color:#fff;background:var(--stable);width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+  .step h4{font-size:1rem;margin-bottom:6px;}
+  .step p{font-size:.87rem;color:var(--muted);font-weight:300;}
+  @media(max-width:780px){.steps{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.steps{grid-template-columns:1fr;}}
+
+  /* Calculator */
+  .calc{background:linear-gradient(160deg,var(--stable) 0%,var(--stable-2) 100%);border-radius:20px;padding:8px;}
+  .calc-inner{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:40px 32px;}
+  .calc h3{color:#fff;font-size:1.3rem;text-align:center;}
+  .calc .cap{text-align:center;color:#b8bce8;font-size:.9rem;font-weight:300;margin-top:6px;margin-bottom:30px;}
+  .calc-input{display:flex;flex-direction:column;align-items:center;gap:18px;}
+  .calc-input label{color:#fff;font-size:.98rem;text-align:center;max-width:42ch;}
+  .calc-input .hint{color:#9ea3d6;font-size:.8rem;text-align:center;max-width:46ch;margin-top:-8px;font-weight:300;}
+  .num-input{width:130px;padding:13px;font-family:var(--font);font-size:1.5rem;font-weight:600;text-align:center;background:rgba(0,0,0,.25);border:1.5px solid rgba(255,255,255,.18);border-radius:12px;color:#fff;outline:none;transition:.2s;}
+  .num-input:focus{border-color:var(--fresh);box-shadow:0 0 0 3px rgba(0,173,237,.25);}
+  .calc .btn-calc{background:var(--fresh);color:#06283b;}
+  .calc .btn-calc:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,173,237,.4);}
+  .calc .btn-reset{background:transparent;border:1.5px solid rgba(255,255,255,.3);color:#fff;}
+  .calc .btn-reset:hover{border-color:#fff;}
+  .calc-result{display:none;flex-direction:column;align-items:center;gap:22px;animation:rise .4s ease;}
+  .calc-result.on{display:flex;}
+  .price-label{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#9ea3d6;text-align:center;}
+  .price{font-family:var(--font);font-size:3.6rem;font-weight:700;line-height:1;color:#fff;text-align:center;letter-spacing:-0.02em;}
+  .price-sub{color:#b8bce8;font-size:.9rem;text-align:center;margin-top:-12px;font-weight:300;}
+  .price-note{color:#878cc4;font-size:.76rem;text-align:center;max-width:40ch;font-weight:300;}
+  @keyframes rise{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+  @media(max-width:680px){.price{font-size:2.7rem;}.calc-inner{padding:30px 20px;}}
+
+  /* Why Lushin */
+  .why{background:var(--stable);color:#fff;}
+  .why h2{color:#fff;}
+  .why .section-head p{color:#c2c6ef;}
+  .whygrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:10px;}
+  .wrow{display:flex;gap:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:22px 24px;}
+  .wrow .ic{flex:none;width:40px;height:40px;border-radius:10px;background:rgba(0,173,237,.18);color:var(--fresh);display:flex;align-items:center;justify-content:center;}
+  .wrow h4{color:#fff;font-size:1.02rem;margin-bottom:4px;}
+  .wrow p{color:#b9bdea;font-size:.9rem;font-weight:300;}
+  @media(max-width:780px){.whygrid{grid-template-columns:1fr;}}
+
+  /* CTA */
+  .cta{background:var(--gray);}
+  .cta-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:54px 48px;text-align:center;box-shadow:0 24px 60px rgba(33,36,92,.08);}
+  .cta-box h2{font-size:2rem;}
+  .cta-box p{color:var(--muted);font-size:1.05rem;margin:14px auto 30px;max-width:54ch;font-weight:300;}
+  .contact{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px;}
+  .contact .who{font-weight:600;color:var(--stable);}
+  .contact .who small{display:block;font-weight:300;color:var(--muted);font-size:.85rem;}
+  .pill{display:inline-flex;align-items:center;gap:8px;background:var(--gray);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-size:.88rem;color:var(--body);font-weight:500;}
+
+  /* Footer */
+  footer{background:var(--stable-2);color:#9ea3d6;padding:34px 0;font-size:.82rem;}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+  footer .fb{color:#fff;font-weight:600;}
+  .divider{height:1px;background:var(--line);border:none;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap">
+    <div class="brand">
+      <span class="dot"></span>
+      <span>OMG &times; Lushin<small>Sales assessments for Hubexo</small></span>
+    </div>
+    <div class="nav-links">
+      <a href="#offers">The two tools</a>
+      <a href="#hire">Hiring License</a>
+      <a href="#seia">Team Evaluation</a>
+      <a href="#why">Through Lushin</a>
+    </div>
+    <a class="nav-cta" href="#contact">Questions?</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Objective Management Group &nbsp;•&nbsp; <b>sales assessments through Lushin</b></span>
+    <h1>Put data behind your sales hiring and team decisions.</h1>
+    <p class="lede">Objective Management Group (OMG) is a sales-specific assessment platform built on 30+ years of data from 38,000 companies. It does two things: it tells you whether a candidate can actually sell in your role before you hire, and it shows you where your current team is strong, where it stalls, and what to do about it. OMG is delivered through certified partners — this overview covers how it works and what it costs through Lushin, OMG's top partner worldwide.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#offers">See how it works</a>
+      <a class="btn btn-ghost-light" href="#contact">Ask a question</a>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="n"><span>38,000</span></div><div class="l">companies assessed</div></div>
+    <div class="stat"><div class="n">30+<span> yrs</span></div><div class="l">of sales-specific data</div></div>
+    <div class="stat"><div class="n"><span>57%</span></div><div class="l">of salespeople are in the wrong role</div></div>
+    <div class="stat"><div class="n"><span>4&times;</span></div><div class="l">more predictive than personality tests</div></div>
+  </div>
+</div>
+
+<!-- OFFERS -->
+<section id="offers">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Two tools, one platform</span>
+      <h2>Two complementary uses</h2>
+      <p>OMG is used in two ways. One looks forward — at the people you're about to hire. The other looks at the team you have today. They share the same underlying science and can be used independently or together.</p>
+    </div>
+    <div class="duo">
+      <div class="ocard hire">
+        <span class="tag">Tool 1 — Hiring</span>
+        <h3>OMG Hiring License</h3>
+        <p class="sub">Screen sales candidates <em>before</em> you make the offer.</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E34554" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Reveals Sales DNA &amp; Will to Sell — what a resume can't show</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E34554" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tells you if the candidate fits <em>your</em> specific role</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E34554" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited candidate screens for a full year</li>
+        </ul>
+        <a class="go" href="#hire">Explore the Hiring License
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="ocard seia">
+        <span class="tag">Tool 2 — Develop</span>
+        <h3>Sales Effectiveness &amp; Improvement Analysis</h3>
+        <p class="sub">A full diagnostic of the team you already have.</p>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0045C2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Individual &amp; team scores across 21+ sales competencies</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0045C2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Shows where deals stall and whether reps fit their role</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0045C2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>A coaching roadmap, not just a report</li>
+        </ul>
+        <a class="go" href="#seia">Explore Team Evaluation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIRING LICENSE -->
+<section id="hire" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--passionate)">Tool 1 — Hiring License</span>
+      <h2>What the Hiring License does</h2>
+      <p>It gives hiring managers a structured, sales-specific read on every candidate before an offer is made, and plugs into the interview process you already run. For context: 33% of candidates an OMG assessment does <em>not</em> recommend go on to fail within their first year.</p>
+    </div>
+
+    <div class="feat">
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <h4>Predictive</h4>
+        <p>4&times; more predictive than behavioral or personality tests. 92% of OMG-recommended candidates reach the top half of the sales force.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h4>Sales-specific</h4>
+        <p>Built only for selling roles. Measures Will to Sell, Sales DNA, and tactical selling — the things that actually move revenue.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h4>Role-specific</h4>
+        <p>Configured to your selling environment — hunters vs. farmers, inside vs. field, named accounts, verticals and territories.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h4>Actionable</h4>
+        <p>Every report says Recommended or Not Recommended for the role, with the specific competencies behind the call.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+        <h4>Customizable</h4>
+        <p>Tune the assessment to mirror the traits of your current top performers and EEOC-compliant by design.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h4>Fits your workflow</h4>
+        <p>Integrates with your existing ATS and interview process. Results back in about 5 minutes after a candidate finishes.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:60px 0 24px;font-size:1.3rem;">How a candidate moves through it</h3>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h4>Set your criteria</h4><p>~30 quick questions define your ideal candidate, matched to validated benchmarks for the role.</p></div>
+      <div class="step"><div class="num">2</div><h4>Send the link</h4><p>Each candidate gets a unique access code. Screen early — before you sink hours into interviews.</p></div>
+      <div class="step"><div class="num">3</div><h4>They assess</h4><p>~100 questions, finished in well under an hour, plus up to 3 references.</p></div>
+      <div class="step"><div class="num">4</div><h4>You decide</h4><p>Results in ~5 minutes. Strong fit? Upgrade the screen to a full evaluation to onboard faster.</p></div>
+    </div>
+
+    <!-- HIRING CALC -->
+    <div class="calc" style="margin-top:60px;">
+      <div class="calc-inner">
+        <h3>Hiring License — what will it cost?</h3>
+        <p class="cap">Pick how many salespeople you plan to hire this year. One license, unlimited screening until those seats are filled.</p>
+
+        <div id="hireInput" class="calc-input">
+          <label>How many salespeople (or sales managers) will you hire?</label>
+          <input type="number" id="hireCount" class="num-input" value="3" min="1" max="100">
+          <button class="btn btn-calc" onclick="calcHire()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Show price
+          </button>
+        </div>
+
+        <div id="hireResult" class="calc-result">
+          <div>
+            <div class="price-label">Annual license</div>
+            <div class="price" id="hirePrice">$0</div>
+          </div>
+          <div class="price-sub" id="hireSub"></div>
+          <p class="price-note">USD list price, purchased through Lushin. Unlimited assessments for 12 months or until the seats on the license are filled.</p>
+          <button class="btn btn-reset" onclick="resetHire()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+            Start over
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEIA -->
+<section id="seia">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" style="color:var(--energetic)">Tool 2 — Sales Team Evaluation</span>
+      <h2>What the Team Evaluation does</h2>
+      <p>The SEIA gives individual and team-level diagnostics of the sales force you already have: who has room to grow, who may be in the wrong seat, where the sales process breaks down, and what to coach next — so decisions rest on data rather than instinct.</p>
+    </div>
+
+    <div class="feat">
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h4>Hidden potential</h4>
+        <p>Find reps who are underperforming because of fixable issues — not lack of ability — and the ceiling on each person.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="8"/><rect x="14" y="5" width="3" height="13"/></svg></div>
+        <h4>Process reality</h4>
+        <p>Do they follow a sales process, or wing it? See where deals stall and where to build accountability.</p>
+      </div>
+      <div class="fcard">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg></div>
+        <h4>What drives each rep</h4>
+        <p>Uncover real motivators so leaders can incentivize, develop and retain people more effectively.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:60px 0 24px;font-size:1.3rem;">How an engagement runs</h3>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h4>Evaluate</h4><p>The whole team is assessed and an executive summary is built for leadership.</p></div>
+      <div class="step"><div class="num">2</div><h4>Findings review</h4><p>Lushin walks executives through the team and individual results and what they mean.</p></div>
+      <div class="step"><div class="num">3</div><h4>Implement</h4><p>Targeted training, coaching and accountability — typically 2–4&times;/month over 9–12 months.</p></div>
+      <div class="step"><div class="num">4</div><h4>Checkpoint</h4><p>12–18 months in, reassess to measure exactly how much the team has improved.</p></div>
+    </div>
+
+    <!-- SEIA CALC -->
+    <div class="calc" style="margin-top:60px;">
+      <div class="calc-inner">
+        <h3>Team Evaluation — what will it cost?</h3>
+        <p class="cap">Enter how many people you'd include. This is the evaluation and executive summary; training and coaching (Phase 3) is scoped separately.</p>
+
+        <div id="seiaInput" class="calc-input">
+          <label>How many individuals will be included in the evaluation?</label>
+          <p class="hint">Sales leaders, sales managers, salespeople and non-selling professionals.</p>
+          <input type="number" id="seiaCount" class="num-input" value="10" min="1" max="999">
+          <button class="btn btn-calc" onclick="calcSeia()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Show price
+          </button>
+        </div>
+
+        <div id="seiaResult" class="calc-result">
+          <div>
+            <div class="price-label">Evaluation investment</div>
+            <div class="price" id="seiaPrice">$0</div>
+          </div>
+          <div class="price-sub" id="seiaSub"></div>
+          <p class="price-note">USD, purchased through Lushin. Covers the evaluations and the executive summary. Implementation &amp; coaching scoped to your goals.</p>
+          <button class="btn btn-reset" onclick="resetSeia()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+            Start over
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY LUSHIN -->
+<section id="why" class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Buying through Lushin</span>
+      <h2>How the partner model works</h2>
+      <p>OMG is sold only through certified partners, so the assessments are always purchased through one. Working with Lushin means a single, consistent relationship — the same setup, scoring and support each time, plus the coaching side that turns the data into results.</p>
+    </div>
+    <div class="whygrid">
+      <div class="wrow">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div><h4>OMG's #1 partner worldwide</h4><p>Lushin is the top OMG partner globally — deep experience standing these programs up across teams and regions.</p></div>
+      </div>
+      <div class="wrow">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div><h4>One point of contact</h4><p>The same team handles setup and support, so there's nothing to re-explain and no inconsistent setups to manage.</p></div>
+      </div>
+      <div class="wrow">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <div><h4>Consistent &amp; comparable</h4><p>The same role criteria, scoring and reporting every time — so results stay comparable across teams and over the years.</p></div>
+      </div>
+      <div class="wrow">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <div><h4>Coaching, not just data</h4><p>Lushin (powered by Sandler) turns assessment results into training and coaching — assessments are step one, not the finish line.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <span class="eyebrow">Questions &amp; pricing</span>
+      <h2>Want to dig in further?</h2>
+      <p>For specifics — confirming pricing, aligning the assessment to a particular selling environment, or seeing a sample report — Dan Faber is the OMG contact at Lushin. Email him with questions or grab a 30-minute slot on his calendar.</p>
+      <a class="btn btn-primary" href="https://meetings.hubspot.com/dan210/30-mins" target="_blank" rel="noopener" style="background:var(--stable);color:#fff;">Book 30 minutes with Dan</a>
+      <div class="contact">
+        <a class="pill" href="mailto:dan@lushin.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--fresh)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          dan@lushin.com
+        </a>
+        <a class="pill" href="https://meetings.hubspot.com/dan210/30-mins" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--fresh)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book a time
+        </a>
+      </div>
+      <div class="contact" style="margin-top:18px;">
+        <span class="who">Dan Faber<small>Owner &amp; Sales Coach — Lushin, Inc. · Powered by Sandler</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="fb">OMG &times; Lushin — for Hubexo</span>
+    <span>Objective Management Group &bull; Sales assessments delivered through Lushin, Inc.</span>
+  </div>
+</footer>
+
+<script>
+  function fmt(n){return '$' + Math.round(n).toLocaleString('en-US');}
+
+  /* ---- Hiring License pricing (from OMG partner pricing sheet) ---- */
+  function hirePrice(n){
+    if(n<=0) return 0;
+    if(n===1) return 4000;
+    if(n===2) return 5690;
+    if(n>=3 && n<=25) return 6400 + (n-3)*1000;
+    return 28400 + (n-25)*750; // 26+
+  }
+  function calcHire(){
+    let n = parseInt(document.getElementById('hireCount').value,10);
+    if(!n || n<1) return;
+    if(n>100) n=100;
+    document.getElementById('hirePrice').textContent = fmt(hirePrice(n));
+    document.getElementById('hireSub').textContent = 'License to hire ' + n + (n===1?' salesperson':' salespeople') + ' — screen as many candidates as you need';
+    document.getElementById('hireInput').style.display='none';
+    document.getElementById('hireResult').classList.add('on');
+  }
+  function resetHire(){
+    document.getElementById('hireResult').classList.remove('on');
+    document.getElementById('hireInput').style.display='flex';
+    document.getElementById('hireCount').focus();
+  }
+
+  /* ---- SEIA pricing: "meet in the middle" (split partner & retail) ---- */
+  const EVAL_PARTNER=220, EVAL_RETAIL=560, SEIA_PARTNER=1800, SEIA_RETAIL=3600;
+  function seiaPrice(n){
+    const evalSplit = n*(EVAL_PARTNER+EVAL_RETAIL)/2;   // 390/person
+    const baseSplit = (SEIA_PARTNER+SEIA_RETAIL)/2;      // 2700
+    return evalSplit + baseSplit;
+  }
+  function calcSeia(){
+    const n = parseInt(document.getElementById('seiaCount').value,10);
+    if(!n || n<1) return;
+    document.getElementById('seiaPrice').textContent = fmt(seiaPrice(n));
+    document.getElementById('seiaSub').textContent = n + (n===1?' individual evaluated':' individuals evaluated');
+    document.getElementById('seiaInput').style.display='none';
+    document.getElementById('seiaResult').classList.add('on');
+  }
+  function resetSeia(){
+    document.getElementById('seiaResult').classList.remove('on');
+    document.getElementById('seiaInput').style.display='flex';
+    document.getElementById('seiaCount').focus();
+  }
+
+  ['hireCount','seiaCount'].forEach(function(id){
+    document.getElementById(id).addEventListener('keydown',function(e){
+      if(e.key==='Enter'){ id==='hireCount'?calcHire():calcSeia(); }
+    });
+  });
+</script>
+</body>
+</html>
